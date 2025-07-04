@@ -1,0 +1,23 @@
+#include <cstdio>
+
+int main() {
+    float vize, final, ortalama;
+
+    printf("Vize notunu gir: ");
+    scanf("%f", &vize);
+
+    printf("Final notunu gir: ");
+    scanf("%f", &final);
+
+    ortalama = (vize * 0.4f) + (final * 0.6f);
+
+    printf("Ortalama: %.2f\n", ortalama);
+
+    if (ortalama >= 60)
+        printf("Geçtiniz\n");
+    else
+        printf("Kaldınız\n");
+
+    return 0;
+}
+
